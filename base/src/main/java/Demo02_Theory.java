@@ -3,14 +3,7 @@ import java.util.regex.Pattern;
 
 import static java.util.regex.Pattern.compile;
 
-/**
- * @Author:wsz
- * @Date: 2022/12/26 22:25
- * @Description:
- * @Version: 1.0
- * @Since: 1.0
- */
-public class RegTheory_02 {
+public class Demo02_Theory {
     public static void main(String[] args) {
         String content="1998年12月8日，第二代Java平台的企业版J2EE发布。1999年6月，Sun公司发布了第二代Java平台" +
                 "（简称为Java2）的3个版本：J2ME（Java2 Micro Edition，Java2平台的微型版），应用于移动、" +
@@ -29,14 +22,15 @@ public class RegTheory_02 {
           1．根据指定的规则，定位满足规则的子字符串(比如1998)
           2．找到后，将子字符串的开始的索引记录到 matcher对象的属性 int[] groups;
             groups[0] = 0，把该子字符串的结束的索引+1的值记录到groups[1] = 4
-          3．同时记录olFLast的值为子字符串的结束的索引+1的值即4
+          3．同时记录oldLast的值为子字符串的结束的索引+1的值即4
 
          matcher.group(0)分析
 
           1．根据 groups[0]=0和groups[1]=4 的记录的位置，从content开始截取子字符串返回
             就是[0,4)
          matcher.find完成的任务（考虑分组）
-         什么是分组，比如(\d\d)(\d\d)，正则表达式中有()表示分组，第1个()表示第1组,第2个()表示第2组...1．根据指定的规则，定位满足规则的子字符串(比如(19)(98))
+         什么是分组，比如(\d\d)(\d\d)，正则表达式中有()表示分组，第1个()表示第1组,第2个()表示第2组...
+         1．根据指定的规则，定位满足规则的子字符串(比如(19)(98))
          2．找到后，将子字符串的开始的索引记录到 matcher对象的属性 int[] groups;
          2.1 groups[0]=0，把该子字符串的结束的索引+1的值记录到groups[1] = 4
          2.2记录1组()匹配到的字符串groups[2] =0 groups[3] = 2

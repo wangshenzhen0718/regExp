@@ -10,7 +10,7 @@ import static java.util.regex.Pattern.compile;
  * @Version: 1.0
  * @Since: 1.0
  */
-public class RegJieBa_15 {
+public class Demo18_StutteringDeduplication {
     public static void main(String[] args) {
         /*分组、捕获、反向引用
         要解决前面的问题,我们需要了解正则表达式的几个概念:

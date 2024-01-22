@@ -10,17 +10,20 @@ import static java.util.regex.Pattern.compile;
  * @Version: 1.0
  * @Since: 1.0
  */
-public class RegNoTanLan {
+public class Demo09_NonGraceful {
     public static void main(String[] args) {
 
-        String content="hello11111111\n";
-        Pattern pattern = compile("\\d+?");//非贪婪匹配
+        String content = "hello11111111";
+        //默认是贪婪匹配
+        //Pattern pattern = compile("\\d+");
+        //非贪婪匹配
+        Pattern pattern = compile("\\d+?");
         Matcher matcher = pattern.matcher(content);
-        int count=0;
-        while (matcher.find()){
+        int count = 0;
+        while (matcher.find()) {
             count++;
             String group = matcher.group(0);
-            System.out.println("第0组："+group);
+            System.out.println("第0组：" + group);
         }
         System.out.println(count);
 

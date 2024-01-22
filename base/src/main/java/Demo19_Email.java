@@ -5,7 +5,7 @@
  * @Version: 1.0
  * @Since: 1.0
  */
-public class RegEmail {
+public class Demo19_Email {
     public static void main(String[] args) {
 
         String content="153474100@163.com";

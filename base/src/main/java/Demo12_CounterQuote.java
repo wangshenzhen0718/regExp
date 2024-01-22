@@ -10,8 +10,7 @@ import static java.util.regex.Pattern.compile;
  * @Version: 1.0
  * @Since: 1.0
  */
-
-public class RegConvert_10 {
+public class Demo12_CounterQuote {
     public static void main(String[] args) {
 
         String content="fdhdfha12321-999666333ffff";

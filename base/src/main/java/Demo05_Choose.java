@@ -6,17 +6,14 @@ import static java.util.regex.Pattern.compile;
 /**
  * @Author:wsz
  * @Date: 2022/12/28 21:25
- * @Description:定位符
+ * @Description:选择匹配符
  * @Version: 1.0
  * @Since: 1.0
  */
-public class RegLocation_07 {
+public class Demo05_Choose {
     public static void main(String[] args) {
-        //String content="18322456793";
-        String content="laohan wo aihanni";
-        //Pattern pattern = compile("^[0-9]+[a-z]*");
-        //Pattern pattern = compile("^[0-9]+[a-z]+$");
-        Pattern pattern = compile("han\\B");
+        String content="中国是一个强大的民族哈哈";
+        Pattern pattern = compile("中国|强大|民族");
         Matcher matcher = pattern.matcher(content);
         while (matcher.find()){
             String group = matcher.group(0);

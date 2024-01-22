@@ -10,7 +10,7 @@ import static java.util.regex.Pattern.compile;
  * @Version: 1.0
  * @Since: 1.0
  */
-public class RegGroup_05 {
+public class Demo06_Group {
     public static void main(String[] args) {
 
         String content="laohan wo1999 aih2000anni";
